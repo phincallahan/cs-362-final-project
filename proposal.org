@@ -1,0 +1,39 @@
+:AUTHORS: Phineas Callahan, Joey Long
+:TOPIC: Probabilistic Phylogenetic Trees
+
+* Goals
+** Explain Flaws of MP and ML Methods
+  Our first goal will be to explore the problems posed by ML (maximum
+  likelihood) and MP (maximum parsimony) methods. Based on my initial readings,
+  this includes the statistical inconsistiences that MP methods can produce, aka
+  [[https://en.wikipedia.org/wiki/Long_branch_attraction][long branch attraction]], and the computational intensity of ML methods. A good
+  resource for this section will be a [[file:Phylogeny_estimation_traditio.pdf][paper]] by Holder and Lewis which explores
+  of the pros and cons of various phylogentic algorithms.
+** Understand Theory of Bayesian Reconstruction
+  First we should read about the theory underlying MCMC, specifically
+  hastings-metropolis. For this infromation we could turn to an online resource,
+  or this [[file:references/hastings-1970.pdf][seminal paper by hastings]]. After we explain the motivation for the
+  development of Bayesian methods, we will explain how these methods actually
+  work. The material for this section will come mainly from primary literature
+  published in the late 90's when bayesian methods were gaining traction,
+  including:
+   - [[file:references/mau-newton-larget-1999.pdf][Bayesian Phylogenetic Inference via Markov Chain Monte Carlo Methods]] 
+   - [[file:references/yang-rannala-1997.pdf][Bayesian Phylogenetic Inference Using DNA Sequences: A Markov Chain Monte Carlo Method]] 
+   - [[file:references/larget-simon-1999.pdf][Markov Chain Monte Carlo Algorithms for the Bayesian Analysis of Phylogenetic Trees]]
+** Survey State of the Art Methods
+  After reviewing basic theory, we will survey a sample of state of the art
+  libraries to understand how bayesian methods can be improved and made more
+  efficient. A tenatative list of software to be reviewed includes: 
+   - Mr Bayes
+   - Bali-Phy
+   - Beast
+** Stretch Goal: Implement an MCMC Algorithm for recreating phylogenetic trees
+  If we have time, we will implement a basic algorithm for MCMC for recreating
+  phylogenetic trees. This section would only be pursued after all the other
+  sections have been completed. Writing a program that accurately performs MCMC
+  seems like it could be a bit of a debugging nightmare, so I would want to be
+  sure that we had plenty of time remaining before the end of the project. If we
+  do pursue this goal, I would try and obtain a dataset used in one of the primary
+  literature papers listed above and merely recreate their results.
+   
+   
